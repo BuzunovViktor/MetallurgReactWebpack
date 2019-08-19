@@ -1,0 +1,285 @@
+.stage-second {
+    width: 56.95vw;
+    margin: 2.92vw auto;
+    display: grid;
+    grid-row-gap: 1.83vw;
+}
+.stage-second h1 {
+    font-family: 'Century Gothic';
+    font-size: 2.41vw;
+    font-weight: bold;
+    color: #a7cd3a;
+}
+.stage-second h2 {
+    font-family: 'Calibri';
+    font-size: 1.83vw;
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+}
+.stage-second p {
+    font-family: 'Calibri';
+    font-size: 1.53vw;
+    color: #ffffff;
+}
+.parent {
+    display: grid;
+    grid-template-columns: auto 21.08vw;
+    grid-column-gap: 3.29vw;
+}
+.parent .parent-question {
+    display: grid;
+    align-content: center;
+    grid-row-gap: 1.46vw;
+}
+.stage-second .question {
+    font-size: 1.53vw;
+    text-align: left;
+}
+.stage-second .img {
+    height: 21.08vw;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+} 
+.stage-second .img img {
+    width: 100%;
+    height: auto;
+}
+.stage-second .buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 3.66vw);
+    grid-gap: 0.51vw;
+    justify-content: center;
+}
+.stage-second .buttons .default {
+    position: relative;
+    background: linear-gradient(-38deg, #ececec 0%,#545454 76%,#858585 100%);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 0.36vw;
+    display: grid;
+    grid-auto-columns: calc(100% - 2px);
+    grid-template-rows: calc(100% - 2px);
+    justify-content: center;
+    align-content: center;
+}
+.stage-second .buttons .default::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgba(122, 122, 122, 0.88);
+    mix-blend-mode: multiply;
+}
+.stage-second .buttons .default button {
+    position: relative;
+    font-family: 'Calibri';
+    font-size: 1.53vw;
+    color: #313131;
+    background: #ffffff;
+    border-radius: 0.36vw;
+    border: none;
+    outline: none;
+}
+.stage-second .buttons .correct button  {
+    background: #a7cd3a;
+    transition: 0.5s;
+}
+.stage-second .buttons .not_correct button  {
+    background: #fb6e52;
+    transition: 0.5s;
+}
+.stage-second .answer {
+    display: none;
+}
+.stage-second .active {
+    display: block;
+}
+.stage-second .answer p span {
+    color: #a7cd3a;
+    font-weight: bold;
+    font-size: 1.53vw;
+}
+.stage-second .answer p .answer_span_correct {
+    color: #a7cd3a;
+}
+.stage-second .answer p .answer_span_not_correct {
+    color: #ff8737;
+}
+.stage-second .button {
+    display: grid;
+    justify-content: center;
+}
+.stage-second .button button {
+    font-family: 'Century Gothic';
+    font-size: 1.83vw;
+    padding: 1.24vw 5.85vw;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(167, 205, 58, 0.7);
+    border: 1px solid #ffffff;
+    border-radius: 0.51vw;
+    outline: none;
+}
+.stage-second .active button {
+    background: rgba(167, 205, 58, 1);
+}
+@media(max-width: 1366px) {
+    .stage-second {
+        width: 778px;
+        margin: 40px auto;
+        grid-row-gap: 25px;
+    }
+    .stage-second h1 {
+        font-size: 33px;
+    }
+    .stage-second h2 {
+        font-size: 25px;
+    }
+    .stage-second p {
+        font-size: 21px;
+    }
+    .parent {
+        grid-template-columns: auto 288px;
+        grid-column-gap: 45px;
+    }
+    .parent .parent-question {
+        grid-row-gap: 20px;
+    }
+    .stage-second .question {
+        font-size: 21px;
+    }
+    .stage-second .img {
+        width: 288px;
+        height: 288px;
+    }
+    .stage-second .buttons {
+        grid-template-rows: 50px 50px 50px;
+        grid-gap: 7px;
+    }
+    .stage-second .buttons .default button {
+        font-size: 21px;
+    }
+    .stage-second .answer p span {
+        font-size: 21px;
+    }
+    .stage-second .button button {
+        font-size: 25px;
+        padding: 17px 80px;
+    }
+}
+
+@media(max-width: 960px) {
+    .stage-second {
+        width: 90vw;
+        margin: 4.16vw auto;
+        grid-row-gap: 2.6vw;
+    }
+    .stage-second h1 {
+        font-size: 3.43vw;
+    }
+    .stage-second h2 {
+        font-size: 2.6vw;
+    }
+    .stage-second p {
+        font-size: 2.18vw;
+    }
+    .parent {
+        grid-template-columns: auto 30vw;
+        grid-column-gap: 4.68vw;
+    }
+    .parent .parent-question {
+        grid-row-gap: 2.08vw;
+    }
+    .stage-second .question {
+        font-size: 2.18vw;
+    }
+    .stage-second .img {
+        width: 30vw;
+        height: 30vw;
+    }
+    .stage-second .buttons {
+        grid-template-rows: repeat(3, 5.2vw);
+        grid-gap: 0.72vw;
+    }
+    .stage-second .buttons .default button {
+        font-size: 2.18vw;
+    }
+    .stage-second .answer p span {
+        font-size: 2.18vw;
+    }
+    .stage-second .button button {
+        font-size: 2.6vw;
+        padding: 1.77vw 8.33vw;
+    }
+}
+
+@media(max-width: 640px) {
+    .stage-second {
+        width: 95vw;
+    }
+    .stage-second h1 {
+        font-size: calc(3.43vw * 1.25);
+    }
+    .stage-second h2 {
+        font-size: calc(2.6vw * 1.25);
+    }
+    .stage-second p {
+        font-size: calc(2.18vw * 1.25);
+    }
+    .parent {
+        grid-template-columns: auto 40vw;
+    }
+    .stage-second .question {
+        font-size: calc(2.18vw * 1.25);
+    }
+    .stage-second .img {
+        width: 40vw;
+        height: 40vw;
+    }
+    .stage-second .buttons .default button {
+        font-size: calc(2.18vw * 1.25);
+    }
+    .stage-second .answer p span {
+        font-size: calc(2.18vw * 1.25);
+    }
+    .stage-second .button button {
+        font-size: calc(2.6vw * 1.25)
+    }
+}
+
+@media(max-width: 480px) {
+    .stage-second h1 {
+        font-size: calc(3.43vw * 1.5);
+    }
+    .stage-second h2 {
+        font-size: calc(2.6vw * 1.5);
+    }
+    .stage-second p {
+        font-size: calc(2.18vw * 1.5);
+    }
+    .stage-second .question {
+        font-size: calc(2.18vw * 1.5);
+    }
+    .stage-second .buttons {
+        grid-template-rows: repeat(3, 7.8vw);
+        grid-gap: 0.72vw;
+    }
+    .stage-second .buttons .default button {
+        font-size: calc(2.18vw * 1.5);
+    }
+    .stage-second .answer p span {
+        font-size: calc(2.18vw * 1.5);
+    }
+    .stage-second .button button {
+        font-size: calc(2.6vw * 1.5)
+    }
+}
+
+

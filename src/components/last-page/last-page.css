@@ -1,0 +1,341 @@
+.last-page {
+    width: 67.78vw;
+    margin: 2.92vw auto;
+}
+.last-page h2 {
+    font-family: 'Century Gothic';
+    font-size: 2.41vw;
+    font-weight: bold;
+    color: #a7cd3a;
+    text-align: center;
+}
+.last-page .subtitle {
+    font-family: 'Calibri';
+    font-size: 1.83vw;
+    color: #ffffff;
+    font-weight: normal;
+    margin-left: 3.95vw;
+}
+.last-page .title_h3 h3 {
+    font-family: 'Calibri';
+    font-size: 1.53vw;
+    color: #ffffff;
+    font-weight: normal;
+}
+.last-page .title_h3 h3 span {
+    color: #a7cd3a;
+}
+.last-page .title_h1 {
+    display: grid;
+    width: max-content;
+}
+.last-page .title_h1 h1 {
+    font-family: 'IRON MAN OF WAR';
+    font-size: 8.41vw;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.last-page .title_h1 .title_h1__one {
+    position: relative;
+    text-shadow: 2px 2px 1px rgba(122, 122, 122, 0.88);
+    background: linear-gradient(-38deg, #ececec 0%,#545454 76%,#858585 100%);
+    -webkit-text-stroke: 1px rgba(255,255,255,.01);
+    -webkit-background-clip: text;
+    mix-blend-mode: multiply;
+}
+.last-page .title_h1 .title_h1__two {
+    background: url(../../images/text.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+}
+.last-page form {
+    display: grid;
+    grid-template-columns: auto 55%;
+    grid-column-gap: 3.29vw;
+    margin: 1.83vw 3.95vw;
+}
+.last-page form .content {
+    display: grid;
+    align-items: center;
+}
+.last-page .form {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ffffff;
+    border-radius: 0.73vw;
+}
+.last-page form .text {
+}
+.last-page form .form .text p {
+    font-family: 'Calibri';
+    font-size: 1.53vw;
+    margin: 0 1.83vw;
+    padding: 1.09vw 0;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.last-page form input {
+    width: calc(100% - 3.66vw);
+    font-family: 'Century Gothic';
+    font-size: 1.83vw;
+    padding: 0.73vw 0;
+    margin: 0 1.83vw;
+    color: #ffffff;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+}
+.last-page form .consent {
+    display: grid;
+    grid-template-columns: 2.19vw auto;
+    align-content: center;
+}
+.last-page form .consent .checkbox {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 2.19vw;
+    height: 2.19vw;
+    margin-left: 1.46vw;
+    align-self: center;
+    border: 1px solid #ffffff;
+}
+.last-page form .consent .checkbox img {
+    width: 100%;
+}
+.last-page form .consent a {
+    font-family: 'Century Gothic';
+    font-size: 1.24vw;
+    padding: 1.31vw;
+    margin-left: 0.73vw;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.last-page .button {
+    display: grid;
+    justify-content: center;
+}
+.last-page .button .parent_button {
+    position: relative;
+    background: linear-gradient(-38deg, #ececec 0%,#545454 76%,#858585 100%);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 0.36vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.last-page .button .parent_button::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgba(122, 122, 122, 0.88);
+    mix-blend-mode: multiply;
+}
+.last-page .button .parent_button button {
+    position: relative;
+    font-family: 'Calibri';
+    font-size: 1.83vw;
+    padding: 1.24vw 5.12vw;
+    font-weight: bold;
+    color: #313131;
+    background: rgba(167, 205, 58, 1);
+    border-radius: 0.36vw;
+    border: none;
+    outline: none;
+}
+.last-page .text-two {
+    margin: 0 3.95vw;
+}
+.last-page .text-two p {
+    font-family: 'Calibri';
+    font-size: 1.83vw;
+    color: #ffffff;
+    text-align: center;
+}
+.last-page .text-two p a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+}
+
+@media(max-width: 1366px) {
+    .last-page {
+        width: 926px;
+        margin: 40px auto;
+    }
+    .last-page h2 {
+        font-size: 33px;
+    }
+    .last-page .subtitle {
+        font-size: 25px;
+        margin-left: 54px;
+    }
+    .last-page .title_h3 h3 {
+        font-size: 21px;
+    }
+    .last-page .title_h1 h1 {
+        font-size: 115px;
+    }
+    .last-page form {
+        grid-template-columns: auto 55%;
+        grid-column-gap: 45px;
+        margin: 25px 54px;
+    }
+    .last-page form .form .text p {
+        font-size: 21px;
+        margin: 0 25px;
+        padding: 15px 0;
+    }
+    .last-page form input {
+        width: calc(100% - 50px);
+        font-size: 25px;
+        padding: 10px 0;
+        margin: 0 25px;
+    }
+    .last-page form .consent {
+        grid-column-gap: 10px;
+    }
+    .last-page form .consent .checkbox {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+    }
+    .last-page form .consent a {
+        font-size: 17px;
+        padding: 18px;
+        margin-left: 10px;
+    }
+    .last-page .button .parent_button button {
+        font-size: 25px;
+        padding: 17px 70px;
+    }
+    .last-page .text-two {
+        margin: 0 54px;
+    }
+    .last-page .text-two p {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 960px) {
+    .last-page {
+        width: 96.4vw;
+        margin: 4.16vw auto;
+    }
+    .last-page h2 {
+        font-size: 3.43vw;
+    }
+    .last-page .subtitle {
+        font-size: 2.6vw;
+        margin-left: 5.62vw;
+    }
+    .last-page .title_h3 h3 {
+        font-size: 2.18vw;
+    }
+    .last-page .title_h1 h1 {
+        font-size: 11.97vw;
+    }
+    .last-page form {
+        grid-template-columns: auto 55%;
+        grid-column-gap: 4.68vw;
+        margin: 2.60vw 5.62vw;
+    }
+    .last-page form .form .text p {
+        font-size: 2.18vw;
+        margin: 0 2.60vw;
+        padding: 1.56vw 0;
+    }
+    .last-page form input {
+        width: calc(100% - 5.2vw);
+        font-size: 2.6vw;
+        padding: 1.04vw 0;
+        margin: 0 2.06vw;
+    }
+    .last-page form .consent {
+        grid-column-gap: 1.04vw;
+    }
+    .last-page form .consent .checkbox {
+        width: 3.12vw;
+        height: 3.12vw;
+        margin-left: 2.08vw;
+    }
+    .last-page form .consent a {
+        font-size: 1.77vw;
+        padding: 1.87vw;
+        margin-left: 1.04vw;
+    }
+    .last-page .button .parent_button button {
+        font-size: 2.60vw;
+        padding: 1.77vw 7.29vw;
+    }
+    .last-page .text-two {
+        margin: 0 5.62vw;
+    }
+    .last-page .text-two p {
+        font-size: 2.6vw;
+    }
+}
+
+@media(max-width: 640px) {
+    .last-page h2 {
+        font-size: calc(3.43vw * 1.25);
+    }
+    .last-page .subtitle {
+        font-size: calc(2.6vw * 1.25);
+    }
+    .last-page .title_h3 h3 {
+        font-size: calc(2.18vw * 1.25);
+    }
+    .last-page form .form .text p {
+        font-size: calc(2.18vw * 1.25);
+    }
+    .last-page form input {
+        font-size: calc(2.6vw * 1.25);
+    }
+    .last-page form .consent a {
+        font-size: calc(1.77vw * 1.25);
+    }
+    .last-page .button .parent_button button {
+        font-size: calc(2.60vw * 1.25);
+    }
+    .last-page .text-two p {
+        font-size: calc(2.6vw * 1.25);
+    }
+}
+
+@media(max-width: 480px) {
+    .last-page h2 {
+        font-size: calc(3.43vw * 1.5);
+    }
+    .last-page .subtitle {
+        font-size: calc(2.6vw * 1.5);
+    }
+    .last-page .title_h3 h3 {
+        font-size: calc(2.18vw * 1.5);
+    }
+    .last-page form .form .text p {
+        font-size: calc(2.18vw * 1.5);
+    }
+    .last-page form input {
+        font-size: calc(2.6vw * 1.5);
+    }
+    .last-page form .consent a {
+        font-size: calc(1.77vw * 1.5);
+    }
+    .last-page .button .parent_button button {
+        font-size: calc(2.60vw * 1.5);
+    }
+    .last-page .text-two p {
+        font-size: calc(2.6vw * 1.5);
+    }
+}

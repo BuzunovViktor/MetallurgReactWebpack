@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    src: url(../../fonts/11528.ttf);
+}
+@font-face {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    src: url(../../fonts/8483.ttf);
+}
+@font-face {
+    font-family: 'IRON MAN OF WAR';
+    src: url(../../fonts/16957.otf);
+}
+.app {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(rgba(70,70, 70, 1), rgba(0, 0, 0, 0)), url(../../images/background.png) no-repeat bottom,rgba(70,70, 70, 1);
+    background-size: 100% auto; 
+    background-position: bottom;
+    overflow: hidden;
+    display: grid;
+    align-content: center;
+}
+.app-last-page{
+    background: url(../../images/text.jpg) no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
