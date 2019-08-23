@@ -30,26 +30,36 @@
     justify-content: center;
     align-content: center;
     perspective: 5000px;
+    overflow: visible !important;
 }
 .stage-third .card-list .card {
+    overflow: visible !important;
     position: relative;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: 1s;
+
     display: grid;
     align-items: center;
     justify-items: center;
     border-radius: 0.36vw;
 }
 .stage-third .card-list .active  {
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg); 
     transform: rotateY(180deg);
 }
 .stage-third .card-list .card .back {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     position: relative;
 }
 .stage-third .card-list .card .front {
     position: absolute;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
 }
 .stage-third .card-list .card img {
     width: 100%;

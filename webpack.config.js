@@ -1,6 +1,7 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const config = {
     entry: {
@@ -60,8 +61,23 @@ const config = {
             loader: 'file-loader?minetype=application/pdf&name=[name].pdf'
         }]
     },
+    optimization: {
+        minimizer: [
+          new UglifyJsPlugin({
+            sourceMap: true,
+            uglifyOptions: {
+              compress: false,
+              mangle: false,
+              output: { beautify: true },
+            },
+            include: /\.js$/,
+            exclude: /\.min\.js$/
+          })
+        ]
+      },
 
     plugins: [
+        
     ],
 };
 
